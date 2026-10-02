@@ -1,6 +1,6 @@
 {
   "name": "dsh-jev-thinking",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Let TypeSafe's Jev decide each prompt's thinking level, then apply it to the model request. · 用 TypeSafe Jev 为每个 prompt 自动决定思考档位。",
   "type": "module",
   "license": "MIT",
