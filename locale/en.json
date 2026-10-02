@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Jev Thinking Level",
+    "description": "Asks TypeSafe's Jev how deep each prompt needs to think and applies that level to the model request. Falls back to a fixed level when the judgement fails."
+  }
+}

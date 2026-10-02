@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Jev 思考档位",
+    "description": "每个 prompt 发出前先问 TypeSafe 的 Jev 该想多深，再把该档位应用到模型请求上；判断失败时回退到固定档位。"
+  }
+}

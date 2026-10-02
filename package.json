@@ -1,0 +1,34 @@
+{
+  "name": "dsh-jev-thinking",
+  "version": "1.0.0",
+  "description": "Let TypeSafe's Jev decide each prompt's thinking level, then apply it to the model request. · 用 TypeSafe Jev 为每个 prompt 自动决定思考档位。",
+  "type": "module",
+  "license": "MIT",
+  "author": "kyan001",
+  "engines": {
+    "node": ">=20.3.0"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale"
+  ],
+  "dependencies": {
+    "@deepseek-ai/schemastery": "^3.18.4"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  }
+}
