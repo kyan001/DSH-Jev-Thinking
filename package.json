@@ -5,6 +5,10 @@
   "type": "module",
   "license": "MIT",
   "author": "kyan001",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kyan001/dsh-jev-thinking.git"
+  },
   "engines": {
     "node": ">=20.3.0"
   },
