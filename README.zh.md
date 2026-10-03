@@ -20,13 +20,13 @@
 
 在终端里装进你的 profile。把 `web` 换成你的 profile 名。
 
-```
+```Shell
 dsh plugin --profile web add dsh-jev-thinking
 ```
 
 也可以在 DSH 里让 agent 代你装：
 
-```
+```Text
 plugin_manager { action: install_bundle, target: "dsh-jev-thinking" }
 ```
 
@@ -58,6 +58,17 @@ plugin_manager { action: install_bundle, target: "dsh-jev-thinking" }
 - **路由若提供 `xhigh` 或 `max`，它们也进选项。** Jev 可能选中，这类路由上要预期最高价格。
 - **额度用完时插件不降级。** 每个 prompt 会先付一次快速失败的请求，然后才回退。
 - **没有配置项可以收窄或排除档位。** 需要就改代码。
+
+## 开发
+
+仅维护者。改动代码后发布：
+
+```Shell
+npm version patch   # 或 minor / major
+npm publish
+```
+
+需要有本包发布权限的 npm 账号。
 
 ## 许可
 

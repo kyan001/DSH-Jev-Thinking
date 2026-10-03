@@ -20,13 +20,13 @@ Three properties matter.
 
 In a terminal, install into your profile. Replace `web` with your profile name.
 
-```
+```Shell
 dsh plugin --profile web add dsh-jev-thinking
 ```
 
 Alternatively, from inside DSH, ask the agent to install it:
 
-```
+```Text
 plugin_manager { action: install_bundle, target: "dsh-jev-thinking" }
 ```
 
@@ -58,6 +58,17 @@ A judgement fails on a timeout, an HTTP error, a missing key, or an answer outsi
 - **A route that offers `xhigh` or `max` adds them to the options.** Jev can choose them, so expect the highest price on such routes.
 - **The plugin does not degrade when credits run out.** Each prompt pays one fast failed request before the fallback.
 - **No setting narrows or excludes levels.** Change the code if you need this.
+
+## Development
+
+Maintainers only. After changing code, publish with:
+
+```Shell
+npm version patch   # or minor / major
+npm publish
+```
+
+Requires an npm account with publish rights for this package.
 
 ## License
 
